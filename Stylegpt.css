@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+@import "./node_modules/nes.css/css/nes.css";
+
+:root {
+  --color-primary: #f541de;
+  --color-primary-rover: #50cdc4;
+  --color-light-gray: #f0f0f0;
+  --color-light-black: #15111e;
+  --color-white: #ffffff;
+}
+
+/* comando que suaviza as transições internas */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fim do comando que suaviza as transições internas */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Silkscreen', cursive;
+  font-size: 25px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  max-height: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-width: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.cicle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, #431e59, #4a3c70);
+  background: -moz-linear-gradient(left, #431e59, #4a3c70);
+  background: -ms-linear-gradient(left, #431e59, #4a3c70);
+  background: -o-linear-gradient(left, #431e59, #4a3c70);
+  background: linear-gradient(to right, #431e59, #4a3c70);
+  /*background-color: #15111e;*/
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .navigation ul {
+  position: absolute;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+}
+
+header .navigation li a {
+  color: #f0f0f0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+  margin-right: 25px;
+  position: relative;
+  left: 750px;
+  transition: 0.3s ease-in-out;
+}
+
+header .navigation li a:hover {
+  color: #f541de;
+}
+
+.nes-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  position: relative;
+  justify-content: space-between;
+  
+  width: 100%;
+  display: flex;
+  padding: 0.1rem;
+  margin-top: 0.1rem;
+  align-items: center;
+ 
+}
+
+.container .esquerda .text {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+ 
+ 
+}
+
+.container .esquerda .text h2 {
+  color: #FFA500;
+  margin-top: 0.1rem;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.container .esquerda .text h2 span {
+  
+  font-size: 3.5rem;
+  color: #f541de;
+}
+
+.container .esquerda .text p {
+  color: #f0f0f0;
+  margin-left:auto;
+}
+
+.container .esquerda .text a {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 25px;
+  background-color: #50cdc4;
+  color: #f0f0f0;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .esquerda .text a:hover {
+  transform: translateY(-10px);
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 1000%;
+  padding: 25px;
+  margin-top: 25px;
+  transform: translateY(-10px);
+  align-items: center;
+}
+
+.social-media {
+  position: absolute;
+  align-items: center;
+  padding-left: 4.8rem;
+  padding-top: 2rem;
+  
+}
+.esquerda {
+  padding-bottom: 8rem;
+  padding-top: 0.1rem;
+  
+}
+
+.direita {
+    position:relative;
+    width: 1000px;
+
+   
+   
+}
+
+.Chris{
+  
+  
+  padding-top: 5rem;
+
+
+}
+
+.space {
+  width: 100%;
+  height: 5rem;
+  background-color: #50cdc4;
+}
+
+
+
+
+.Start {
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 5rem;
+  padding-top: 2.5rem;
+  width: 16rem;
+}
+
+
+/* PIXELED BUTTONS https://nostalgic-css.github.io/NES.css/ */
+
+
+/* Guia para Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* ICONES */
+
+.heart, .coins {
+ 
+  justify-content: flex-end;
+  display: flex;
+}
+
+.phone {
+  justify-content: flex-end;
+  margin-bottom: 12rem;
+  display: flex;
+
+}
